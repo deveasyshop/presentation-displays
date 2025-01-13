@@ -27,6 +27,17 @@ apply plugin: 'kotlin-android'
 android {
     compileSdkVersion 33
 
+    namespace "com.namit.presentation_displays"
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
